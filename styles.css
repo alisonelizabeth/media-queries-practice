@@ -1,0 +1,352 @@
+/*basic styles*/
+* {
+	vertical-align: top;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+li {
+	list-style-type: none; 
+}
+
+p {
+	font-family: 'Asap';
+	color: #505050;
+	line-height: 20px;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*header*/
+header {
+	min-width: 940px;
+	height: 600px;
+	background-image: url('martini.png');
+	background-size: 190px 175px;
+}
+
+header img {
+	width: 30px;
+}
+
+header span {
+	font-family: 'Oswald';
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+header .nav {
+	float: right;
+	font-family: 'Oswald';
+}
+
+header li {
+	display: inline;
+	padding-right: 10px;
+	font-size: 18px;
+}
+
+header .background-layer {
+	background: linear-gradient(to bottom, #006AB7 0%,rgba(0, 106, 173,0.85) 100%); 
+  	top: 0;
+  	left: 0;
+ 	height: 100%;
+  	width: 100%;
+}
+
+.toolbar{
+	padding-top: 20px;
+}
+
+.head {
+	text-align: center;
+}
+
+.head h1 {
+	padding-top: 140px;
+	font-family: 'Oswald';
+	text-transform: uppercase;
+	color: white;
+	margin: 0;
+	font-size: 95px;
+}
+
+.head span {
+	font-family: 'Asap';
+	font-size: 16px;
+	color: #272626;
+}
+
+/*left column */
+
+.left-column {
+	width: 55%;
+	display: inline-block;
+	margin-right: 10%;
+}
+
+.left-column h2 {
+	margin: 0;
+	font-family: 'Oswald';
+	text-transform: uppercase;
+	font-size: 60px;
+	color: #003253;
+}
+
+/*right column */
+.right-column {
+	vertical-align: top;
+	display: inline-block;
+	width: 30%;
+	padding-top: 10px;
+}
+
+.right-column .user{
+	display: block;
+	width: 75px;
+	border-radius: 50px;
+	margin: 0 auto;
+}
+
+.right-column .username {
+	display: block;
+	text-transform: uppercase;
+	font-family: 'Oswald';
+	color: #0067BA;
+	text-align: center;
+}
+
+.right-column ul {
+	display: inline-block;
+	text-align: center;
+}
+
+.right-column li {
+	display: inline;
+	font-family: 'Asap';
+	color: #acacac;
+	padding-right: 5px;
+}
+
+.byline img {
+	width: 40px;
+}
+
+.about-user {
+	text-align: center;
+}
+
+.ad img {
+	width: 300px;
+	padding-top: 70px;
+}
+
+blockquote {
+	font-family: 'Oswald';
+	font-size: 30px;
+	text-transform: uppercase;
+	color: rgb(0, 106, 173);
+}
+
+.sidebar h5 {
+	font-family: 'Oswald';
+	font-size: 15px;
+	margin: 0px;
+	text-transform: uppercase;
+	color: rgb(0, 106, 173);
+}
+
+.share-image {
+	width: 150px;
+}
+
+@media(max-width: 939) {
+	header{
+		height: 400px;
+	}
+
+	.head h1 {
+		padding-top: 95px;
+		font-size: 40px;
+	}
+
+	.left-column h2 {
+		font-size: 45px;
+	}
+
+	.container {
+		width: 800px;
+		margin: 0 auto;
+}
+}
+
+@media(max-width: 860) {
+	header{
+		height: 300px;
+		min-width: 860px;
+	}
+
+	.head h1 {
+		padding-top: 95px;
+		font-size: 40px;
+	}
+
+	.left-column h2 {
+		font-size: 35px;
+	}
+
+	.container {
+		width: 600px;
+		margin: 0 auto;
+}
+	.ad img {
+		width: 200px;
+	}
+
+	.username {
+		font-size: 12px;
+	}
+
+	.right-column li {
+		font-size: 12px;
+	}
+
+	.ad img {
+		padding-top: 50px;
+	}
+
+	.sidebar h5 {
+		font-size: 13px;
+	}
+
+	blockquote {
+		font-size: 20px;
+	}
+}
+
+@media(max-width: 615) {
+	header {
+		min-width: 540px;
+	}
+
+	.container {
+		width: 540px;
+	}
+
+	.ad img {
+		display: none;
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	.about-user {
+		display: block;
+		width: 432px;
+	}
+
+	.username {
+		font-size: 15px;
+	}
+
+	.right-column {
+		margin: 0 auto;
+	}
+
+	.right-column li {
+		font-size: 14px;
+	}
+
+	.right-column .user {
+		width: 100px;
+	}
+	.left-column {
+		width: 80%;
+		margin: 10px 5px 10px 5px;
+	}
+}
+
+@media(max-width: 554) {
+	header {
+		min-width: 400px;
+		height: 175px;
+		background-image: none;
+	}
+
+	header .background-layer{
+		background: #003253;
+		min-width: 400px;
+	}
+
+	.head h1 {
+		font-size: 25px;
+		padding: 0px;
+	}
+
+	.head span {
+		color: rgb(0, 106, 173);
+		font-size: 11px;
+	}
+
+	.toolbar span {
+		display: none;
+	}
+
+	.toolbar ul {
+		position: relative;
+		top: 110px;
+		right: 135px;
+		color: white;
+	}
+
+	.toolbar img {
+		position: relative;
+		left: 175px;
+		top: 0px;
+		padding: 5px;
+		border-radius: 5px;
+		background: rgb(0, 106, 173);
+	}
+
+	.container {
+		width: 400px;
+	}
+
+	.about-user {
+		display: block;
+		width: 400px;
+	}
+
+	.username {
+		font-size: 15px;
+	}
+
+	.right-column {
+		margin: 0 auto;
+	}
+
+	.right-column li {
+		font-size: 14px;
+	}
+
+	.right-column .user {
+		width: 100px;
+	}
+	.left-column {
+		width: 80%;
+		margin: 10px 5px 10px 5px;
+	}
+
+}
