@@ -3,6 +3,10 @@
 	vertical-align: top;
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -94,6 +98,7 @@ header .background-layer {
 	width: 55%;
 	display: inline-block;
 	margin-right: 10%;
+	margin-top: 20px;
 }
 
 .left-column h2 {
@@ -106,6 +111,7 @@ header .background-layer {
 
 /*right column */
 .right-column {
+	margin-top: 20px;
 	vertical-align: top;
 	display: inline-block;
 	width: 30%;
@@ -139,8 +145,27 @@ header .background-layer {
 	padding-right: 5px;
 }
 
+.byline {
+	font-family: 'Asap';
+	font-size: 14px;
+	margin: 0 auto;
+}
+
 .byline img {
-	width: 40px;
+	width: 25px;
+	border-radius: 40px;
+}
+
+.byline .name {
+	color: #0067BA;
+}
+
+.byline .date {
+	color: #acacac;
+}
+
+.byline .underline {
+	text-decoration: underline;
 }
 
 .about-user {
@@ -157,6 +182,9 @@ blockquote {
 	font-size: 30px;
 	text-transform: uppercase;
 	color: rgb(0, 106, 173);
+	border-left: 1px solid rgb(216, 215, 215);
+	padding-left: 15px;
+
 }
 
 .sidebar h5 {
@@ -171,7 +199,87 @@ blockquote {
 	width: 150px;
 }
 
-@media(max-width: 939) {
+/* line */
+
+.line {
+	width: 100%;
+	border-bottom: 1px solid #acacac;
+}
+
+/*footer*/
+
+footer h1 {
+	margin: 20px 0;
+	text-align: center;
+	font-family: 'Oswald';
+	text-transform: uppercase;
+	font-size: 60px;
+	color: #003253;
+}
+
+.posts {
+	width: 235px;
+	display: inline-block;
+	height: 275px;
+	background-size: 100%;
+}
+
+.posts h3 {
+	margin-top: 225px;
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-family: 'Oswald';
+	font-size: 25px
+}
+
+.one {
+	background-image: url('green-martini.jpg');
+
+}
+.two {
+	background-image: url('hand-martini.jpg');
+}
+
+.three{
+	background-image: url('james-bond.jpg');
+}
+
+.four{
+	background-image: url('yellow-martini.jpg');
+}
+
+.bottom-footer {
+	width: 100%;
+	background-color: #003253;
+}
+
+.bottom-footer span {
+	margin-left: 75px;
+}
+
+.bottom-footer li {
+	display: inline;
+}
+
+.bottom-toolbar {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
+	font-family: 'Asap';
+	font-size: 13px;
+	color: rgb(190, 194, 219);
+}
+
+.bottom-toolbar ul {
+	float: right;
+}
+
+.bottom-toolbar img {
+	position: absolute;
+	bottom: 0;
+}
+/*media queries*/
+/*@media(max-width: 939) {
 	header{
 		height: 400px;
 	}
@@ -190,8 +298,8 @@ blockquote {
 		margin: 0 auto;
 }
 }
-
-@media(max-width: 860) {
+*/
+/*@media(max-width: 860) {
 	header{
 		height: 300px;
 		min-width: 860px;
@@ -350,3 +458,4 @@ blockquote {
 	}
 
 }
+*/
